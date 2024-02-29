@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Músicas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+            position: relative;
+        }
+        .navigation-buttons {
+            position: fixed;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            z-index: 999;
+            background-color: rgba(0, 0, 0, 0); /* Fundo transparente */
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .navigation-buttons a {
+            display: block;
+            margin-bottom: 10px;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .navigation-buttons a:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto; /* Centralizar horizontalmente */
+            padding: 20px;
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 4rem; /* Tamanho aumentado do texto "Músicas" */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 20px;
+            background-color: #444;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        video {
+            width: 100%;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+        .video-thumbnail {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+        .video-title {
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .download-links {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .download-links a {
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .download-links a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation-buttons">
+        <a href="#juntos-pra-sempre-section">Juntos Pra Sempre</a>
+        <a href="#salvar-ou-deixar-section">Salvar ou Deixar</a>
+        <!-- Adicione mais botões conforme necessário -->
+    </div>
+    <div class="container">
+        <h1>Músicas</h1>
+        <ul id="playlist">
+            <!-- Lista de vídeos -->
+            <li id="juntos-pra-sempre-section">
+                <div class="video-title">Juntos Pra Sempre</div>
+                <video controls preload="none" poster="Musicas/Juntos Pra Sempre/Miniatura.png">
+                    <source src="Musicas/Juntos Pra Sempre/Juntos Pra Sempre.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <div class="download-links">
+                    <a href="Musicas/Juntos Pra Sempre/Juntos Pra Sempre.mp3" download type="audio/mpeg">Baixar Áudio</a>
+                    <a href="Musicas/Juntos Pra Sempre/Juntos Pra Sempre.mp4" download>Baixar Vídeo</a>
+                </div>
+            </li>
+            <li id="salvar-ou-deixar-section">
+                <div class="video-title">Salvar ou Deixar</div>
+                <video controls preload="none" poster="Musicas/Salvar ou Deixar/Miniatura.png">
+                    <source src="Musicas/Salvar ou Deixar/Salvar ou Deixar.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <div class="download-links">
+                    <a href="Musicas/Salvar ou Deixar/Salvar ou Deixar.mp3" download type="audio/mpeg">Baixar Áudio</a>
+                    <a href="Musicas/Salvar ou Deixar/Salvar ou Deixar.mp4" download>Baixar Vídeo</a>
+                </div>
+            </li>
+            <!-- Adicione mais vídeos conforme necessário -->
+        </ul>
+    </div>
+</body>
+</html>
